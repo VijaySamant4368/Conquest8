@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pirate Hunt</title>
+  <style>
+    body {
+      margin: 0;
+      min-width: 290px;
+      font-family: Georgia, serif;
+      background: linear-gradient(180deg, #0e1a26, #132b3a);
+      color: #f5ebd2;
+      padding: 18px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    p {
+      margin: 0 0 14px;
+      line-height: 1.35;
+      color: #dfd1ac;
+    }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 12px;
+      padding: 12px;
+      margin: 0 0 10px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    #launch {
+      background: #d4a63f;
+      color: #1e1304;
+    }
+    #reset {
+      background: rgba(255,255,255,.12);
+      color: #fff;
+    }
+    #status {
+      margin-top: 6px;
+      font-size: 12px;
+      opacity: .85;
+    }
+  </style>
+</head>
+<body>
+  <h1>☠ Pirate Hunt</h1>
+  <p>Launch the Goldbeard trail, then follow the hints across the web.</p>
+  <button id="launch">Open Bon Voyage</button>
+  <button id="reset">Reset progress</button>
+  <div id="status">Ready to sail.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

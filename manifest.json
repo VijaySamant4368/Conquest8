@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Conquest - Goldbeard Trail",
+  "version": "1.0.0",
+  "description": "A no-backend browser treasure hunt that layers pirate clues onto real web pages.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pirate Hunt"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*", "start.html", "start.css", "start.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pirate-hunt-goldbeard@conquest.com"
+    }
+  }
+}
